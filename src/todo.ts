@@ -27,7 +27,11 @@ export class TodoElement extends UIElement {
     });
   }
   subscribe() {
-    this.listen("todo-changed", this.update.bind(this));
+    this.listen("todo-changed", ({ id }: any) => {
+      if (id === this.getAttribute("todo-id")) {
+        this.update();
+      }
+    });
   }
   attributeChangedCallback() {
     this.update();
