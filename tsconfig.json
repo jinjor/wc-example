@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "public/js",
+    // "sourceMap": true,
+    "target": "es6",
+    "module": "es6",
+    "allowJs": true,
+    "types": [],
+    "pretty": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "declaration": false,
+    "removeComments": true,
+    "noUnusedLocals": false,
+    "noImplicitReturns": true,
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "preserveWatchOutput": true,
+    "inlineSourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": []
+}
